@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-10T17:00:19 IST" name="Default suite" finished-at="2025-02-10T17:00:37 IST" duration-ms="17818">
+    <groups>
+    </groups>
+    <test started-at="2025-02-10T17:00:19 IST" name="Default test" finished-at="2025-02-10T17:00:37 IST" duration-ms="17818">
+      <class name="TestNGDemo.DataProviderSauceDemo">
+        <test-method signature="LoginPage(java.lang.String,java.lang.String)[pri:0, instance:TestNGDemo.DataProviderSauceDemo@7c6908d7]" started-at="2025-02-10T17:00:19 IST" name="LoginPage" data-provider="getData" finished-at="2025-02-10T17:00:26 IST" duration-ms="6701" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+        <test-method signature="LoginPage(java.lang.String,java.lang.String)[pri:0, instance:TestNGDemo.DataProviderSauceDemo@7c6908d7]" started-at="2025-02-10T17:00:26 IST" name="LoginPage" data-provider="getData" finished-at="2025-02-10T17:00:32 IST" duration-ms="6191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@gmail2.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+        <test-method signature="LoginPage(java.lang.String,java.lang.String)[pri:0, instance:TestNGDemo.DataProviderSauceDemo@7c6908d7]" started-at="2025-02-10T17:00:32 IST" name="LoginPage" data-provider="getData" finished-at="2025-02-10T17:00:37 IST" duration-ms="4840" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+      </class> <!-- TestNGDemo.DataProviderSauceDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
