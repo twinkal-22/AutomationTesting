@@ -9,11 +9,12 @@ public class AssertDemo
 {
 	WebDriver driver = null;
 
-	@Test
+	@Test 
 	public void test1()
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Twinkal.Mavani\\Desktop\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
-	    driver = new ChromeDriver();
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Twinkal.Mavani\\Downloads\\chromedriver-win64\\chromedriver.exe");
+        driver = new ChromeDriver();
 		driver.navigate().to("https://www.guru99.com/junit-tutorial.html");
 		String ActualTitle = driver.getTitle();
 		//System.out.println(actualTitle);

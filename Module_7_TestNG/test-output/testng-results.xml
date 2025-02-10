@@ -1,108 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-06T17:36:42 IST" name="Default suite" finished-at="2024-12-06T17:36:42 IST" duration-ms="110">
+  <suite started-at="2025-02-04T15:14:00 IST" name="Default suite" finished-at="2025-02-04T15:14:08 IST" duration-ms="7679">
     <groups>
     </groups>
-    <test started-at="2024-12-06T17:36:42 IST" name="Default test" finished-at="2024-12-06T17:36:42 IST" duration-ms="110">
-      <class name="TestNGDemo.ParameterizedDemo">
-        <test-method signature="launchURL(java.lang.String)[pri:1, instance:TestNGDemo.ParameterizedDemo@22ff4249]" started-at="2024-12-06T17:36:42 IST" name="launchURL" finished-at="2024-12-06T17:36:42 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by @Test on method launchURL but has not been marked @Optional or defined
-in C:\Users\Twinkal.Mavani\AppData\Local\Temp\testng-eclipse-1911318564\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by @Test on method launchURL but has not been marked @Optional or defined
-in C:\Users\Twinkal.Mavani\AppData\Local\Temp\testng-eclipse-1911318564\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test started-at="2025-02-04T15:14:00 IST" name="Default test" finished-at="2025-02-04T15:14:08 IST" duration-ms="7679">
+      <class name="TestNGDemo.DemoSona">
+        <test-method signature="Browser()[pri:1, instance:TestNGDemo.DemoSona@6a6cb05c]" started-at="2025-02-04T15:14:00 IST" name="Browser" finished-at="2025-02-04T15:14:04 IST" duration-ms="4394" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchURL -->
-        <test-method signature="loginPage(java.lang.String,java.lang.String)[pri:2, instance:TestNGDemo.ParameterizedDemo@22ff4249]" started-at="2024-12-06T17:36:42 IST" name="loginPage" finished-at="2024-12-06T17:36:42 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
+        </test-method> <!-- Browser -->
+        <test-method signature="login(org.testng.ITestContext)[pri:2, instance:TestNGDemo.DemoSona@6a6cb05c]" started-at="2025-02-04T15:14:04 IST" name="login" finished-at="2025-02-04T15:14:07 IST" duration-ms="3212" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@388ba540]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[
-Parameter 'username' is required by @Test on method loginPage but has not been marked @Optional or defined
-in C:\Users\Twinkal.Mavani\AppData\Local\Temp\testng-eclipse-1911318564\testng-customsuite.xml]]>
+              <![CDATA[element click intercepted: Element is not clickable at point (751, 592)
+  (Session info: chrome=132.0.6834.160)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [936d5a9b4c65103eab6d6e56d7a4f75b, clickElement {id=f.E726B44B14A74BE165F0325545131DDF.d.70F7B5B61FA61B65B9EF0B8E7C7CD1BA.e.20}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\TWINKA~1.MAV\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55528}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55528/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (936d5a9b4c65103eab6d6e56d7a4f75b)] -> xpath: //*[@id="root"]/div[3]/div/div[2]/div[3]/form/button]
+Session ID: 936d5a9b4c65103eab6d6e56d7a4f75b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'username' is required by @Test on method loginPage but has not been marked @Optional or defined
-in C:\Users\Twinkal.Mavani\AppData\Local\Temp\testng-eclipse-1911318564\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPage -->
-        <test-method signature="LogoutPage()[pri:3, instance:TestNGDemo.ParameterizedDemo@22ff4249]" started-at="2024-12-06T17:36:42 IST" name="LogoutPage" finished-at="2024-12-06T17:36:42 IST" duration-ms="17" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at TestNGDemo.ParameterizedDemo.LogoutPage(ParameterizedDemo.java:70)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (751, 592)
+  (Session info: chrome=132.0.6834.160)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [936d5a9b4c65103eab6d6e56d7a4f75b, clickElement {id=f.E726B44B14A74BE165F0325545131DDF.d.70F7B5B61FA61B65B9EF0B8E7C7CD1BA.e.20}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\TWINKA~1.MAV\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55528}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55528/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (936d5a9b4c65103eab6d6e56d7a4f75b)] -> xpath: //*[@id="root"]/div[3]/div/div[2]/div[3]/form/button]
+Session ID: 936d5a9b4c65103eab6d6e56d7a4f75b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at TestNGDemo.DemoSona.login(DemoSona.java:30)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -131,26 +82,20 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LogoutPage -->
-        <test-method signature="tearDown()[pri:4, instance:TestNGDemo.ParameterizedDemo@22ff4249]" started-at="2024-12-06T17:36:42 IST" name="tearDown" finished-at="2024-12-06T17:36:42 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        </test-method> <!-- login -->
+        <test-method signature="profile(org.testng.ITestContext)[pri:0, instance:TestNGDemo.DemoSona@6a6cb05c]" started-at="2025-02-04T15:14:08 IST" name="profile" finished-at="2025-02-04T15:14:08 IST" depends-on-methods="TestNGDemo.DemoSona.login" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null]]>
+              <![CDATA[Method TestNGDemo.DemoSona.profile() on instance TestNGDemo.DemoSona@6a6cb05c depends on not successfully finished methods 
+[TestNGDemo.DemoSona.login() on instance TestNGDemo.DemoSona@6a6cb05c]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
-at TestNGDemo.ParameterizedDemo.tearDown(ParameterizedDemo.java:81)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+              <![CDATA[java.lang.Throwable: Method TestNGDemo.DemoSona.profile() on instance TestNGDemo.DemoSona@6a6cb05c depends on not successfully finished methods 
+[TestNGDemo.DemoSona.login() on instance TestNGDemo.DemoSona@6a6cb05c]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -171,11 +116,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestNGDemo.ParameterizedDemo -->
+        </test-method> <!-- profile -->
+      </class> <!-- TestNGDemo.DemoSona -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

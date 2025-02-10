@@ -14,8 +14,8 @@ public class TotalHyperLink
 	int linkscount = 0 ;
 	String[] links = null;	
 
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Twinkal.Mavani\\Desktop\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Twinkal.Mavani\\Downloads\\chromedriver-win64\\chromedriver.exe");
+    WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://demo.guru99.com/test/web-table-element.php");
 		

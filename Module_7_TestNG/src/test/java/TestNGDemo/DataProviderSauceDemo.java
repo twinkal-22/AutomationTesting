@@ -14,7 +14,7 @@ public class DataProviderSauceDemo
 	@Test(dataProvider = "getData")
 	public void LoginPage(String userName, String password) throws InterruptedException
 	{                   
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Twinkal.Mavani\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver-win64\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.saucedemo.com/v1/");
 		

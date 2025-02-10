@@ -15,7 +15,7 @@ public class FaceBookLogin_JUnit
 	public void OpenChromeBorwser()
 	{
 		ChromeOptions options = new ChromeOptions();
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Twinkal.Mavani\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\\\Users\\\\Twinkal.Mavani\\\\Downloads\\\\chromedriver-win64\\\\chromedriver.exe");
 		driver = new ChromeDriver(options);
 		driver.get("https://www.facebook.com/");
 		

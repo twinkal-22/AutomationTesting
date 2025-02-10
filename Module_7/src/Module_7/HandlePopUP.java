@@ -10,7 +10,7 @@ public class HandlePopUP
 {
 	public static void main(String[] args) throws InterruptedException 
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Twinkal.Mavani\\Desktop\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Twinkal.Mavani\\Downloads\\chromedriver-win64\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://demo.guru99.com/test/delete_customer.php");
